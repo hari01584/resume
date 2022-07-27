@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://hari01584.github.io/portfolio/}{\Large Harishankar Kumar}} & Email : \href{mailto:hari01584@gmail.com}{hari01584@gmail.com}\\
+  \href{https://hari01584.github.io/portfolio/}{https://hari01584.github.io/portfolio/} & Mobile : +918872276957 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thapar Institute of \& Engineering  Technology}{Patiala, Punjab}
+      {Bachelor of Technology - BTech}{2020 -- 2024}
+    \resumeSubheading
+      {Kendriya Vidyalaya No 2}{Ferozepur Cantt, Punjab}
+      {XII, PCM;  95\% Boards}{2007 -- 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Smart India Hackathon}{Hyderabad, Telangana}
+    {Upcoming Finalist Team}{SIH 2022}
+    \resumeItemListStart
+      \resumeItem{Finalist}
+        {One of the 5 finalist team making it to grand finale for goverment hosted national level hackathon.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Google Developer Student Club}{Patiala, Punjab}
+      {Core Member}{Sept 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{Quantum Computer Project}
+          {Worked in Quantum Computing project and acted as a proof reader and editor for all the study materials and resources provided there.}
+        \resumeItem{Events}
+          {As a core member helped in many big/small events and different aspects like advertisement, technical, deployment, etc.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Microsoft Learn Student Chapter}{Patiala, Punjab}
+      {Member}{Jul 2021 - Jun 2022}
+      \resumeItemListStart
+        \resumeItem{Speaker for Gamedev Workshop}
+          {Conducted a workshop for juniors on the topic of game-development and especially by using graphics library like sdl2!}
+        \resumeItem{Technical Helper}
+          {Helped in technical aspects of hosting many great events/hackathons! Handled deployment site for recruitments as well.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Dev Launchers - Remote}{Austin, Texas, United States}
+      {Member}{Feb 2020 - Mar 2021}
+      \resumeItemListStart
+        \resumeItem{Events Manager}
+          {Was event manager for Non profit organization DevLaunchers, promoting game development in early teens using fun and interactive workshops!}
+        \resumeItem{Plugins for Minecraft Server}
+          {Created minecraft java plugins for community minecraft server of devlaunchers.}
+      \resumeItemListEnd
+
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {App Developer}{Google Playstore}
+      {Indie Developer}{Lifetime}
+      \resumeItemListStart
+        \resumeItem{XenonE For Blockman GO}
+          {Installed on more than quarter million devices \(250k+\) and generated revenues above 10 grands (10,000\$), the application was massive hit and was actively used by more than a hundred thousands users actively at some point!}
+        \resumeItem{Vortex Connect - An Online Multiplayer}
+          {Recreated the classic minecraft servers hosting application, all the frontend/backend etc were created and application was deployed on the server. More than 16k installs with 1k+ active users and half a thousand testers.}
+        \resumeItem{Shapes 2D}
+          {A multi-platform game made using graphics library sdl2 and android native.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Blogs}{Remote}
+      {Blogging/Posts}{Lifetime}
+      \resumeItemListStart
+        \resumeItem{Content Writing}
+          {Wrote technical and non technical blogs, which included tutorials, real life experiences, step-by-step walkthrough, demo/proof of concept work etc! \textbf{\href{https://hari01584.github.io/portfolio/}{Link of the blog here}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  % https://withme.skullzbones.com/blog
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{DeSu - Decentralized Survey App}
+      {Created a blockchain based application and website for taking anonymous and secure surveys which promotes an open internet ecosystem.}
+    \resumeSubItem{Beat-Remix}
+      {Mix sound with images to create montage/edits using the rhymthic beats!}
+    \resumeSubItem{BubbleBoxModel}
+      {A deep learning model and notebooks to identify text bubbles in manga panels. Made using tensorflow and keras!}
+    \resumeSubItem{libMcServerProxy}
+      {An android library for brodcasting Minecraft servers to your lan without going through hassles of manually doing so! Took a great time and research on networking to create this.}
+    \resumeSubItem{RaspMyBerry}
+      {Raspberry Pi Moderator and status tool using discord client.}
+
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
