@@ -1,1 +1,0 @@
-latex $1 $1.pdf build -t latex . && dvipdfm $1.dvi
