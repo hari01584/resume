@@ -4,6 +4,10 @@
 % License : MIT
 %------------------------
 
+\documentclass{article}
+\usepackage{xcolor} % Allows color customization
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -93,20 +97,12 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.linkedin.com/in/hsk4link/}{\Large Harishankar Kumar}} & Email : \href{mailto:hkumar1\_be20@thapar.edu}{hkumar1\_be20@thapar.edu}\\
-  \href{https://www.linkedin.com/in/hsk4link/}{https://www.linkedin.com/in/hsk4link/} & Mobile : +918872276957 \\
+  \textbf{{\Large Harishankar Kumar}} & Email : {hkumar1\_be20@thapar.edu}\\
+  \href{https://www.linkedin.com/in/hsk4link/}{Linkedin}, \href{https://github.com/hari01584}{GitHub} & Mobile : +918872276957 \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
-\section{Education}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {Thapar Institute of \& Engineering  Technology}{Patiala, Punjab}
-    {Bachelor of Technology - BTech; 8.6 CGPA}{2020 -- 2024}
-  \resumeSubheading
-    {Kendriya Vidyalaya No 2}{Ferozepur Cantt, Punjab}
-    {XII, PCM;  95\% Boards}{2007 -- 2020}
-\resumeSubHeadingListEnd
+\input{section_education}
 
 %-----------OPEN SOURCE EXPERIENCE-----------------
 \input{section_open_source_contribution}
